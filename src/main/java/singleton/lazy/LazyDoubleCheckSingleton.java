@@ -6,7 +6,8 @@ package singleton.lazy;
  */
 public class LazyDoubleCheckSingleton {
 
-    //volatile 规避对象创建语句执行时的指令重排序
+    /**volatile 规避对象创建语句执行时的指令重排序
+     */
     private static volatile LazyDoubleCheckSingleton instance;
 
     private LazyDoubleCheckSingleton(){}
